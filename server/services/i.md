@@ -1,0 +1,1 @@
+os modais de Gerenciador de perfis e o de series não tem as cores q selecionamos no tema. Desconsidere a aba superior sobrepondo, já foi resolvido na conversa anterior

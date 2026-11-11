@@ -1,0 +1,142 @@
+
+TERMOS DE USO E POLÍTICA DE PRIVACIDADE
+
+~ ORIZON TV ~
+
+Versão 1.0.1 - Atualizado em Novembro de 2026
+
+Estes Termos de Uso e Política de Privacidade regulam o acesso e a utilização do
+software "Orizon TV" (aqui denominado "Aplicativo", "Software" ou "Player").
+
+Ao baixar, instalar, acessar ou utilizar o Orizon TV, o Usuário declara ter lido,
+compreendido e concordado expressamente com todas as cláusulas e condições deste
+documento. Caso não concorde com qualquer termo aqui disposto, o Usuário deve
+desinstalar e cessar imediatamente o uso do software.
+
+
+PARTE 1 - TERMOS DE USO
+
+
+CLÁUSULA 1 - NATUREZA DO SOFTWARE (PLAYER DE MÍDIA NEUTRO)
+1.1. O Orizon TV é estritamente uma aplicação tecnológica utilitária de reprodução
+de mídia (software media player), desenvolvida para decodificar, processar e exibir
+fluxos de áudio e vídeo nos formatos suportados (como HLS .m3u8, MP4, MKV, TS e 
+protocolos associados).
+1.2. O software atua de forma análoga a navegadores de internet (web browsers) ou
+players universais de código aberto (como VLC Media Player, Kodi ou MPV), servindo
+apenas como ferramenta de interface e decodificação para conteúdos definidos e
+inseridos diretamente pelo próprio Usuário.
+
+CLÁUSULA 2 - ISENÇÃO TOTAL DE CONTEÚDO E AUSÊNCIA DE VÍNCULOS
+2.1. O ORIZON TV É FORNECIDO COMPLETAMENTE VAZIO ("AS IS"), DESPROVIDO DE QUALQUER
+TIPO DE CONTEÚDO MULTIMÍDIA, CANAL DE TELEVISÃO, TRANSMISSÃO AO VIVO, FILME, SÉRIE,
+ÁUDIO OU LISTA DE REPRODUÇÃO PRÉ-CARREGADA.
+2.2. OS DESENVOLVEDORES, PROPRIETÁRIOS E DISTRIBUIDORES DO ORIZON TV:
+     a) NÃO FORNECEM, NÃO VENDEM, NÃO REVENDEM, NÃO HOSPEDAM, NÃO ARMAZENAM E NÃO
+        TRANSMITEM QUALQUER CONTEÚDO AUDIOVISUAL OU SINAL DE TELEVISÃO;
+     b) NÃO POSSUEM NENHUM VÍNCULO, CONTRATO, PARCERIA, SOCIEDADE OU AFILIAÇÃO COM
+        PROVEDORES DE IPTV, FORNECEDORES DE LISTAS M3U, SERVIDORES XTREAM CODES,
+        OPERADORAS DE TV POR ASSINATURA OU QUALQUER OUTRA PLATAFORMA DE STREAMING;
+     c) NÃO APROVAM, NÃO HOMOLOGAM, NÃO CONTROLAM E NÃO ENDOSSAM O USO DE QUALQUER
+        SERVIÇO OU LISTA DE CONTEÚDO FORNECIDA POR TERCEIROS;
+     d) NÃO INCENTIVAM E CONDENAM VEEMENTEMENTE QUALQUER PRÁTICA QUE VIOLE DIREITOS
+        AUTORAIS OU LEIS DE PROPRIEDADE INTELECTUAL.
+
+CLÁUSULA 3 - RESPONSABILIDADE EXCLUSIVA DO USUÁRIO
+3.1. A inserção, carregamento, sincronização e visualização de links de listas de
+reprodução (M3U, M3U8) ou credenciais de acesso a servidores (Xtream Codes API) são
+de única, exclusiva e total responsabilidade do Usuário.
+3.2. É dever e obrigação legal do Usuário certificar-se de que possui todos os
+direitos, licenças, autorizações legais ou assinaturas legítimas perante os
+titulares dos direitos autorais para reproduzir os conteúdos por ele inseridos no
+aplicativo.
+3.3. O Usuário concorda em indenizar e isentar os desenvolvedores do Orizon TV de
+qualquer reclamação, processo judicial, perda, responsabilidade ou despesa
+decorrente do uso indevido do software ou da inserção de conteúdos não autorizados.
+
+CLÁUSULA 4 - PROPRIEDADE INTELECTUAL DO SOFTWARE
+4.1. Todos os direitos de propriedade intelectual referentes ao código-fonte, layout,
+design de interface gráfica, logotipos, ícones, elementos visuais e recursos do
+Orizon TV pertencem exclusivamente aos seus desenvolvedores.
+4.2. O Usuário recebe uma licença de uso pessoal, não exclusiva, intransferível e
+revogável para executar o software em seus dispositivos, sendo vedada a engenharia
+reversa, descompilação ou redistribuição comercial não autorizada do software.
+
+CLÁUSULA 5 - ISENÇÃO DE GARANTIAS E LIMITAÇÃO DE RESPONSABILIDADE
+5.1. Devido à natureza descentralizada da internet e de servidores de terceiros, o
+Orizon TV NÃO garante:
+     a) A estabilidade, disponibilidade contínua, velocidade ou funcionamento de
+        streams, listas ou servidores adicionados pelo Usuário;
+     b) A precisão ou veracidade de guias de programação (EPG), sinopses ou metadados
+        fornecidos pelas listas do Usuário;
+     c) Compatibilidade com codecs proprietários ou transmissões defeituosas geradas
+        na origem por servidores de terceiros.
+5.2. Em nenhuma circunstância os desenvolvedores do Orizon TV serão responsáveis
+por danos indiretos, lucros cessantes, perda de dados ou interrupções de serviço
+decorrentes de falhas em servidores externos ou má utilização do aplicativo.
+
+CLÁUSULA 6 - MODIFICAÇÕES DOS TERMOS
+6.1. Estes Termos de Uso podem ser atualizados periodicamente para refletir melhorias
+no software ou adaptações regulatórias. O uso continuado do aplicativo após tais
+alterações constitui aceitação plena das novas condições.
+
+
+
+PARTE 2 - POLÍTICA DE PRIVACIDADE
+
+
+O Orizon TV foi projetado sob a premissa fundamental da privacidade pelo design
+(Privacy by Design). Nosso compromisso é assegurar que seus dados pessoais e seus
+hábitos de consumo de mídia permaneçam sob seu controle absoluto.
+
+SEÇÃO 1 - ARMAZENAMENTO E TRATAMENTO LOCAL DE DADOS (LOCAL-FIRST)
+1.1. Todos os dados gerenciados pelo aplicativo — incluindo nomes de perfis, URLs
+de listas M3U, credenciais de login em servidores Xtream Codes (usuário e senha),
+histórico de reprodução, canais favoritos e configurações de interface — são
+armazenados EXCLUSIVAMENTE de forma LOCAL no próprio dispositivo do Usuário (armazenamento
+em disco / SSD local).
+1.2. O Orizon TV NÃO possui servidores em nuvem para coleta, rastreamento ou espelhamento
+das listas, senhas ou canais dos usuários. Nenhuma credencial ou lista é enviada para
+nossa infraestrutura ou para terceiros de análise de dados.
+
+SEÇÃO 2 - COMUNICAÇÃO DE REDE E STREAMING
+2.1. Quando o Usuário solicita a reprodução de um canal, filme ou série, o aplicativo
+estabelece uma conexão direta entre o dispositivo local do Usuário e o servidor de
+origem informado pelo Usuário na lista.
+2.2. Para contornar bloqueios de CORS em navegadores/Electron ou viabilizar a decodificação
+adequada, o software utiliza um serviço proxy executado LOCALMENTE (em localhost / 127.0.0.1)
+no computador do próprio Usuário. Esse tráfego não passa por servidores externos pertencentes
+aos criadores do Orizon TV.
+
+SEÇÃO 3 - AUSÊNCIA DE RASTREADORES E NÃO COMERCIALIZAÇÃO
+3.1. O Orizon TV NÃO implementa ferramentas invasivas de telemetria, não comercializa,
+não aluga e não compartilha dados de navegação, termos pesquisados ou hábitos de uso
+com redes de anúncios, agências de publicidade ou corretores de dados (data brokers).
+3.2. As pesquisas salvas no recurso "Pesquisas Recentes" ficam armazenadas somente na
+memória local da sua instalação e podem ser apagadas a qualquer instante com um clique.
+
+SEÇÃO 4 - CONFORMIDADE COM A LGPD (LEI GERAL DE PROTEÇÃO DE DADOS - BRASIL)
+4.1. Em observância à Lei Federal nº 13.709/2018 (LGPD), o Orizon TV garante ao Usuário
+o total controle sobre seus registros:
+     a) Princípio da Minimização: Coletamos apenas as informações estritamente necessárias
+        para a execução técnica do player local;
+     b) Direito de Acesso e Eliminação: O Usuário tem acesso irrestrito aos arquivos de
+        configuração salvos na pasta local do software e pode apagá-los integralmente a
+        qualquer momento.
+
+SEÇÃO 5 - EXCLUSÃO DEFINITIVA E RESET DE DADOS
+5.1. O Usuário pode remover individualmente qualquer lista ou perfil através do
+"Gerenciador de Perfis e Listas" no ícone da lixeira.
+5.2. O aplicativo disponibiliza o botão "Limpar Todos os Perfis", localizado nas opções
+de configuração. Ao acioná-lo, todos os dados de perfis, listas M3U, logins Xtream,
+favoritos, histórico e caches em disco são permanentemente apagados do dispositivo.
+5.3. A desinstalação completa do aplicativo também resulta na remoção dos arquivos de
+execução locais da aplicação.
+
+SEÇÃO 6 - CANAL DE CONTATO E DÚVIDAS
+6.1. Para dúvidas sobre o funcionamento do aplicativo, sugestões ou esclarecimentos
+a respeito destes Termos de Uso e Política de Privacidade, consulte a documentação
+oficial do projeto ou o repositório de suporte disponibilizado pelos mantenedores.
+
+
+Efeito Orizon - O player moderno, rápido e privado para o seu dia a dia.

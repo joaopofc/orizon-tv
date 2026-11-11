@@ -1,0 +1,509 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+/* ==========================================================================
+   🎨 3 PALETAS DE CORES DO APLICATIVO ORIZON TV (SÓBRIAS, SOLIDAS, ZERO NEON)
+   ========================================================================== */
+
+/* 1. PALETA PADRÃO: Cinza Ônix & Azul Ártico (Apple TV / Minimalista Moderno) */
+:root, [data-theme="slate"] {
+  --bg-primary: #0c0f17;
+  --bg-surface: #131722;
+  --bg-card: #181d2a;
+  --bg-card-hover: #22293b;
+  --bg-overlay: rgba(12, 15, 23, 0.96);
+
+  --accent-primary: #38bdf8;
+  --accent-bright: #7dd3fc;
+  --accent-dark: #0284c7;
+  --accent-subtle: rgba(56, 189, 248, 0.12);
+  --border-accent: rgba(56, 189, 248, 0.35);
+  --text-on-accent: #090d16;
+
+  --border-subtle: #242c3d;
+  --border-muted: #1c2333;
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  --text-dim: #64748b;
+
+  --shadow-card: 0 8px 24px rgba(0, 0, 0, 0.6);
+  --shadow-subtle: 0 4px 12px rgba(0, 0, 0, 0.4);
+
+  /* Compatibilidade retroativa para elementos que usavam variáveis emerald */
+  --accent-emerald: var(--accent-primary);
+  --accent-emerald-bright: var(--accent-bright);
+  --accent-emerald-dark: var(--accent-dark);
+  --accent-emerald-glow: var(--accent-subtle);
+  --border-emerald: var(--border-accent);
+  --shadow-emerald-glow: none !important;
+
+  --transition: all 0.18s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* 2. PALETA 2: Preto Puro OLED & Vermelho Cinema (Netflix / Estúdio Cinematográfico) */
+[data-theme="cinema"] {
+  --bg-primary: #070709;
+  --bg-surface: #111114;
+  --bg-card: #17171c;
+  --bg-card-hover: #24242b;
+  --bg-overlay: rgba(7, 7, 9, 0.96);
+
+  --accent-primary: #e50914;
+  --accent-bright: #ef4444;
+  --accent-dark: #b91c1c;
+  --accent-subtle: rgba(229, 9, 20, 0.14);
+  --border-accent: rgba(229, 9, 20, 0.4);
+  --text-on-accent: #ffffff;
+
+  --border-subtle: #27272f;
+  --border-muted: #1e1e24;
+  --text-main: #f4f4f5;
+  --text-muted: #a1a1aa;
+  --text-dim: #71717a;
+
+  --shadow-card: 0 8px 24px rgba(0, 0, 0, 0.7);
+  --shadow-subtle: 0 4px 12px rgba(0, 0, 0, 0.5);
+
+  --accent-emerald: var(--accent-primary);
+  --accent-emerald-bright: var(--accent-bright);
+  --accent-emerald-dark: var(--accent-dark);
+  --accent-emerald-glow: var(--accent-subtle);
+  --border-emerald: var(--border-accent);
+  --shadow-emerald-glow: none !important;
+}
+
+/* 3. PALETA 3: Grafite Nobre & Âmbar Ouro (HBO Max / Prime Video / Tons Quentes) */
+[data-theme="amber"] {
+  --bg-primary: #0e0d11;
+  --bg-surface: #16141a;
+  --bg-card: #1d1b24;
+  --bg-card-hover: #2a2734;
+  --bg-overlay: rgba(14, 13, 17, 0.96);
+
+  --accent-primary: #f59e0b;
+  --accent-bright: #fbbf24;
+  --accent-dark: #b45309;
+  --accent-subtle: rgba(245, 158, 11, 0.14);
+  --border-accent: rgba(245, 158, 11, 0.4);
+  --text-on-accent: #0f172a;
+
+  --border-subtle: #2d2938;
+  --border-muted: #211e29;
+  --text-main: #fdfbf7;
+  --text-muted: #a8a29e;
+  --text-dim: #78716c;
+
+  --shadow-card: 0 8px 24px rgba(0, 0, 0, 0.65);
+  --shadow-subtle: 0 4px 12px rgba(0, 0, 0, 0.45);
+
+  --accent-emerald: var(--accent-primary);
+  --accent-emerald-bright: var(--accent-bright);
+  --accent-emerald-dark: var(--accent-dark);
+  --accent-emerald-glow: var(--accent-subtle);
+  --border-emerald: var(--border-accent);
+  --shadow-emerald-glow: none !important;
+}
+
+/* 4. PALETA 4: Blackout AMOLED 100% & Titânio Gelo (Preto Absoluto / Fundo Zero Luz) */
+[data-theme="blackout"] {
+  --bg-primary: #000000;
+  --bg-surface: #080808;
+  --bg-card: #0f0f0f;
+  --bg-card-hover: #181818;
+  --bg-overlay: rgba(0, 0, 0, 0.98);
+
+  --accent-primary: #f8fafc;
+  --accent-bright: #ffffff;
+  --accent-dark: #cbd5e1;
+  --accent-subtle: rgba(255, 255, 255, 0.12);
+  --border-accent: rgba(255, 255, 255, 0.35);
+  --text-on-accent: #000000;
+
+  --border-subtle: #1c1c1c;
+  --border-muted: #141414;
+  --text-main: #ffffff;
+  --text-muted: #a3a3a3;
+  --text-dim: #737373;
+
+  --shadow-card: 0 8px 32px rgba(0, 0, 0, 0.98);
+  --shadow-subtle: 0 4px 16px rgba(0, 0, 0, 0.9);
+
+  --accent-emerald: var(--accent-primary);
+  --accent-emerald-bright: var(--accent-bright);
+  --accent-emerald-dark: var(--accent-dark);
+  --accent-emerald-glow: var(--accent-subtle);
+  --border-emerald: var(--border-accent);
+  --shadow-emerald-glow: none !important;
+}
+
+/* 5. PALETA 5: Ametista Noturna & Violeta Cósmico (Criativo, Sci-Fi e Púrpura Elegante) */
+[data-theme="amethyst"] {
+  --bg-primary: #090714;
+  --bg-surface: #110d22;
+  --bg-card: #18122d;
+  --bg-card-hover: #231a40;
+  --bg-overlay: rgba(9, 7, 20, 0.97);
+
+  --accent-primary: #a855f7;
+  --accent-bright: #c084fc;
+  --accent-dark: #7e22ce;
+  --accent-subtle: rgba(168, 85, 247, 0.15);
+  --border-accent: rgba(168, 85, 247, 0.42);
+  --text-on-accent: #ffffff;
+
+  --border-subtle: #291f48;
+  --border-muted: #1e1736;
+  --text-main: #faf5ff;
+  --text-muted: #d8b4fe;
+  --text-dim: #9333ea;
+
+  --shadow-card: 0 8px 26px rgba(0, 0, 0, 0.72);
+  --shadow-subtle: 0 4px 14px rgba(0, 0, 0, 0.52);
+
+  --accent-emerald: var(--accent-primary);
+  --accent-emerald-bright: var(--accent-bright);
+  --accent-emerald-dark: var(--accent-dark);
+  --accent-emerald-glow: var(--accent-subtle);
+  --border-emerald: var(--border-accent);
+  --shadow-emerald-glow: none !important;
+}
+
+/* 6. PALETA 6: Verde Jade & Esmeralda Nórdica (Botânica Nobre, Esportes Premium) */
+[data-theme="emerald"] {
+  --bg-primary: #050e09;
+  --bg-surface: #0b1811;
+  --bg-card: #112218;
+  --bg-card-hover: #183123;
+  --bg-overlay: rgba(5, 14, 9, 0.97);
+
+  --accent-primary: #10b981;
+  --accent-bright: #34d399;
+  --accent-dark: #059669;
+  --accent-subtle: rgba(16, 185, 129, 0.15);
+  --border-accent: rgba(16, 185, 129, 0.42);
+  --text-on-accent: #ffffff;
+
+  --border-subtle: #1c3829;
+  --border-muted: #13271d;
+
+  --border-subtle: #1c3829;
+  --border-muted: #13271d;
+  --text-main: #f0fdf4;
+  --text-muted: #a7f3d0;
+  --text-dim: #34d399;
+
+  --shadow-card: 0 8px 26px rgba(0, 0, 0, 0.72);
+  --shadow-subtle: 0 4px 14px rgba(0, 0, 0, 0.52);
+
+  --accent-emerald: var(--accent-primary);
+  --accent-emerald-bright: var(--accent-bright);
+  --accent-emerald-dark: var(--accent-dark);
+  --accent-emerald-glow: var(--accent-subtle);
+  --border-emerald: var(--border-accent);
+  --shadow-emerald-glow: none !important;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -webkit-user-drag: none;
+  user-drag: none;
+}
+
+img, video, canvas, svg, a, picture {
+  -webkit-user-drag: none !important;
+  -khtml-user-drag: none !important;
+  -moz-user-drag: none !important;
+  -o-user-drag: none !important;
+  user-drag: none !important;
+  user-select: none !important;
+  -webkit-user-select: none !important;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-main);
+  overflow: hidden;
+  user-select: none;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* Scrollbars sólidas, discretas e sem neon */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2a3346;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-primary);
+}
+
+/* Container com rolagem forçada */
+.visible-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: var(--accent-primary) var(--bg-primary);
+  overflow-y: auto !important;
+}
+
+.visible-scroll::-webkit-scrollbar {
+  width: 7px;
+}
+
+.visible-scroll::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+  border-radius: 4px;
+}
+
+.visible-scroll::-webkit-scrollbar-thumb {
+  background: #2a3346;
+  border-radius: 4px;
+}
+
+.visible-scroll::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-primary);
+}
+
+/* Sem glassmorphism translúcido: painéis sólidos e nítidos */
+.glass-panel {
+  background: var(--bg-card);
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  border: 1px solid var(--border-subtle);
+}
+
+.glass-dropdown {
+  background: var(--bg-surface);
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  border: 1px solid var(--border-subtle);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.85);
+}
+
+/* Texto de destaque usando a paleta ativa */
+.text-gradient-emerald {
+  color: var(--accent-primary) !important;
+  background: none !important;
+  -webkit-background-clip: unset !important;
+  background-clip: unset !important;
+  -webkit-text-fill-color: var(--accent-primary) !important;
+}
+
+.bg-gradient-emerald {
+  background: var(--accent-primary) !important;
+}
+
+.btn-accent {
+  background: var(--accent-primary) !important;
+  color: var(--text-on-accent) !important;
+}
+
+.btn-accent svg {
+  color: var(--text-on-accent) !important;
+}
+
+/* Animação de pulso sutil e sem neon */
+@keyframes pulseDot {
+  0% { transform: scale(0.95); opacity: 0.8; }
+  50% { transform: scale(1.1); opacity: 1; }
+  100% { transform: scale(0.95); opacity: 0.8; }
+}
+
+.animate-pulse-dot {
+  animation: pulseDot 2s infinite ease-in-out;
+}
+
+/* Elementos interativos */
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: var(--transition);
+}
+
+button:focus-visible {
+  outline: 2px solid var(--accent-primary);
+  outline-offset: 2px;
+}
+
+input, select, textarea {
+  font-family: inherit;
+  outline: none;
+  transition: var(--transition);
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: var(--accent-primary) !important;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Slider de volume do player */
+input[type="range"].player-volume-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  background: #2a3346;
+  height: 4px;
+  border-radius: 9999px;
+  outline: none;
+}
+
+input[type="range"].player-volume-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: #ffffff;
+  cursor: pointer;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+  transition: transform 0.1s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input[type="range"].player-volume-slider::-webkit-slider-thumb:hover {
+  transform: scale(1.25);
+}
+
+input[type="range"].player-volume-slider.boost-high::-webkit-slider-thumb {
+  background: #facc15;
+  box-shadow: 0 0 8px rgba(250, 204, 21, 0.85), 0 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+input[type="range"].player-volume-slider.boost-max::-webkit-slider-thumb {
+  background: #ef4444;
+  box-shadow: 0 0 10px rgba(239, 68, 68, 0.95), 0 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* Fullscreen do Player */
+#orizon-player-container:fullscreen,
+#orizon-player-container:-webkit-full-screen {
+  width: 100vw !important;
+  height: 100vh !important;
+  max-width: 100vw !important;
+  max-height: 100vh !important;
+  background-color: #000000 !important;
+}
+
+#orizon-player-container:fullscreen video,
+#orizon-player-container:-webkit-full-screen video {
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 100% !important;
+  max-height: 100% !important;
+  object-fit: contain !important;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20%, 60% { transform: translateX(-6px); }
+  40%, 80% { transform: translateX(6px); }
+}
+
+/* Otimização de GPU & Hover instantâneo da Sidebar (Zero JS Re-render) */
+.sidebar-channel-item {
+  transition: background 0.1s ease, border-color 0.1s ease !important;
+  will-change: background;
+}
+
+.sidebar-channel-item:not(.is-active):hover {
+  background: rgba(255, 255, 255, 0.07) !important;
+}
+
+.sidebar-channel-item .channel-fav-btn {
+  opacity: 0;
+  transition: opacity 0.1s ease;
+}
+
+.sidebar-channel-item:hover .channel-fav-btn,
+.sidebar-channel-item .channel-fav-btn.active {
+  opacity: 1 !important;
+}
+
+/* ==========================================================================
+   🪟 BARRA DE TÍTULO MODERNA INTEGRADA (ELECTRON WINDOW CONTROLS OVERLAY)
+   ========================================================================== */
+.app-drag-region {
+  -webkit-app-region: drag;
+}
+
+.app-no-drag {
+  -webkit-app-region: no-drag;
+}
+
+/* Todos os elementos interativos nunca devem bloquear o clique ou serem arrastados */
+button, input, select, textarea, a, [role="button"], [role="switch"] {
+  -webkit-app-region: no-drag;
+}
+
+/* ==========================================================================
+   🎬 GRID MODERNO DE GÊNEROS (SIDEBAR FILMES & SÉRIES) - EFEITO DE FOCO
+   ========================================================================== */
+.genre-card {
+  user-select: none;
+  -webkit-user-select: none;
+  contain: paint;
+  transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+              filter 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+              transform 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+              border-color 0.2s ease,
+              box-shadow 0.25s ease;
+  will-change: opacity, filter;
+}
+
+.genre-card:focus-visible {
+  outline: 2px solid var(--accent-primary);
+  outline-offset: 2px;
+}
+
+/* 1. MOUSE FORA DA SIDEBAR:
+   Todos os cards não selecionados escurecem sutilmente para dar foco ao catálogo da direita,
+   enquanto o card escolhido (.is-active) permanece 100% visível, nítido e em destaque */
+.sidebar-container:not(:hover) .genre-card:not(.is-active) {
+  opacity: 0.52;
+  filter: brightness(0.65) saturate(0.85);
+}
+
+/* O card selecionado permanece sempre claro, vivo e em evidência máxima */
+.genre-card.is-active {
+  opacity: 1 !important;
+  filter: brightness(1.05) saturate(1.05) !important;
+}
+
+/* 2. MOUSE POR CIMA DA SIDEBAR:
+   Todo o grid acende mais, fica mais claro e iluminado para navegação fluida */
+.sidebar-container:hover .genre-card {
+  opacity: 1;
+  filter: brightness(1) saturate(1);
+}
+
+/* Destaque adicional ao passar o mouse sobre um card individual na sidebar */
+.sidebar-container:hover .genre-card:hover {
+  filter: brightness(1.12) saturate(1.08);
+}
+
+/* ==========================================================================
+   🚀 ANIMAÇÕES DA SPLASH SCREEN / LOADING INICIAL DO APP
+   ========================================================================== */
+@keyframes shimmerLoad {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(250%); }
+}
+
+@keyframes splashFadeIn {
+  0% { opacity: 0; transform: scale(0.96); }
+  100% { opacity: 1; transform: scale(1); }
+}
