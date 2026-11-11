@@ -290,33 +290,6 @@ export function PlaylistModal({
     }
   };
 
-  // Carrega lista de demonstração
-  const handleLoadDemo = async () => {
-    setIsLoading(true);
-    setError('');
-    try {
-      const res = await fetch('/api/playlists', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          name: 'Canais Abertos Demo (IPTV-Org)',
-          type: 'm3u',
-          url: 'https://iptv-org.github.io/iptv/countries/br.m3u'
-        })
-      });
-
-      const data = await res.json();
-      if (!res.ok) throw new Error(data.error || 'Falha ao carregar lista de demonstração');
-
-      onPlaylistCreated(data.playlist);
-      onClose();
-    } catch (err) {
-      setError(err.message);
-    } finally {
-      setIsLoading(false);
-    }
-  };
-
   return (
     <div style={{
       position: 'fixed',
@@ -1026,39 +999,6 @@ export function PlaylistModal({
                   </button>
                 </form>
               )}
-
-              {/* Botão Demo */}
-              <div style={{
-                marginTop: '20px',
-                paddingTop: '16px',
-                borderTop: '1px solid rgba(255, 255, 255, 0.08)',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'space-between'
-              }}>
-                <span style={{ fontSize: '12px', color: '#64748b' }}>Quer apenas testar o player?</span>
-                <button
-                  type="button"
-                  onClick={handleLoadDemo}
-                  disabled={isLoading}
-                  style={{
-                    background: 'var(--accent-subtle)',
-                    border: '1px solid var(--border-accent)',
-                    color: 'var(--accent-primary)',
-                    padding: '6px 14px',
-                    borderRadius: '8px',
-                    fontSize: '12px',
-                    fontWeight: '700',
-                    display: 'flex',
-                    alignItems: 'center',
-                    gap: '6px',
-                    cursor: 'pointer'
-                  }}
-                >
-                  <Sparkles size={14} />
-                  Testar com Canais Demo
-                </button>
-              </div>
             </div>
           )}
         </div>
