@@ -968,16 +968,21 @@ export function SettingsModal({
                   <div style={{
                     width: '52px',
                     height: '52px',
-                    borderRadius: '12px',
-                    overflow: 'hidden',
-                    background: '#0c0f17',
-                    border: '1px solid var(--border-accent)',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
+                    background: 'transparent',
+                    border: 'none',
+                    boxShadow: 'none',
                     flexShrink: 0
                   }}>
-                    <img src="/logo.png" alt="Orizon TV" style={{ width: '100%', height: '100%', objectFit: 'cover' }} onError={(e) => e.target.style.display = 'none'} />
+                    <img 
+                      src="/logo.png" 
+                      alt="Orizon TV" 
+                      draggable={false}
+                      style={{ width: '100%', height: '100%', objectFit: 'contain' }} 
+                      onError={(e) => e.target.style.display = 'none'} 
+                    />
                   </div>
 
                   <div>

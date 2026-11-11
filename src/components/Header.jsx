@@ -132,25 +132,24 @@ export function Header({
       <div style={{ display: 'flex', alignItems: 'center', gap: '28px' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '12px', cursor: 'pointer' }}>
           <div style={{
-            width: '40px',
-            height: '40px',
-            borderRadius: '11px',
-            overflow: 'hidden',
+            width: '38px',
+            height: '38px',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
-            background: 'rgba(15, 23, 42, 0.9)',
-            border: '1px solid rgba(56, 189, 248, 0.35)',
-            boxShadow: '0 4px 15px rgba(2, 132, 199, 0.25)',
+            background: 'transparent',
+            border: 'none',
+            boxShadow: 'none',
             flexShrink: 0
           }}>
             <img 
-              src="/logo.jpg" 
+              src="/logo.png" 
               alt="Orizon TV" 
+              draggable={false}
               style={{
                 width: '100%',
                 height: '100%',
-                objectFit: 'cover',
+                objectFit: 'contain',
                 display: 'block'
               }} 
             />

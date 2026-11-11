@@ -908,29 +908,30 @@ export function App() {
             alignItems: 'center',
             animation: 'splashFadeIn 0.35s ease-out'
           }}>
-            {/* Logo com brilho e borda arredondada */}
+            {/* Logo oficial limpo, sem bordas nem fundo ao redor */}
             <div style={{
-              width: '92px',
-              height: '92px',
-              borderRadius: '24px',
-              overflow: 'hidden',
-              background: 'rgba(15, 23, 42, 0.9)',
-              border: '2px solid var(--border-accent)',
+              width: '96px',
+              height: '96px',
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
-              boxShadow: '0 0 40px var(--accent-subtle), 0 12px 32px rgba(0,0,0,0.8)',
               marginBottom: '20px',
-              position: 'relative'
+              background: 'transparent',
+              border: 'none',
+              boxShadow: 'none'
             }}>
               <img 
-                src="/logo.jpg" 
+                src="/logo.png" 
                 alt="Orizon TV" 
+                draggable={false}
                 style={{
                   width: '100%',
                   height: '100%',
-                  objectFit: 'cover',
-                  display: 'block'
+                  objectFit: 'contain',
+                  display: 'block',
+                  border: 'none',
+                  outline: 'none',
+                  boxShadow: 'none'
                 }} 
               />
             </div>
